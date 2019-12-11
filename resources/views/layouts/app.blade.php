@@ -72,9 +72,11 @@
             </div>
         </nav>
 
-        <main class="py-4">
-            @yield('content')
-        </main>
+        @yield('content')
+        
     </div>
+
+    
+    <script src="{{ asset('js/app.js') }}"></script>
 </body>
 </html>

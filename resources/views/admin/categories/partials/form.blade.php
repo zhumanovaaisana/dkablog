@@ -11,7 +11,7 @@
 </select>
 
 <label for="">Наименование</label>
-<input type="text" class="form-control" name="title" placeholder="Заголовок категории" value="{{$category->title or ''}}" required>
+<input type="text" class="form-control" name="title" placeholder="Заголовок категории" value="{{ $category->title ?: '' }}" required>
 
 <label for="">Slug</label> 
 <input type="text" name="slug" class="form-control" placeholder="Автоматическая генерация" value="{{$category->slug or ''}}" readonly="">
