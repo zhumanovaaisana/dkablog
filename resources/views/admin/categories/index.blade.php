@@ -10,8 +10,8 @@
 	  @slot('active') Категории @endslot
 	@endcomponent
 	
-	<hr>
-
+	<hr />
+	{{-- {{dump($categories)}} --}}
 	<a href="{{route('admin.category.create')}}" class="btn btn-primary pull-right"><i class="fafa-plus-square-o"></i>Создать категорию</a>
 	<table class="table table-striped">
 		<thead>
@@ -25,7 +25,7 @@
 			  	<td>{{$category->title}}</td>
 			  	<td>{{$category->published}}</td>
 			  	<td>
-			  		<a href="{{route('admin.category.edit'.['id'=>$category->id])}}"><i class="fafa-edit"></i></a>
+			  		<a href="{{route('admin.category.edit',$category)}}"><i class="fafa-edit"></i></a>
 			  	</td>
 			  </tr>
 			  @empty
