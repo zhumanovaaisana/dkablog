@@ -41,7 +41,7 @@
 			  </tr>
 			  @endforelse
 		</tbody>
-<!--		<tfoot>
+		<tfoot>
 			<tr>
 				<td colspan="3">
 					<ul class="pagination pull-right">
@@ -49,7 +49,7 @@
 					</ul>
 				</td>
 			</tr>
-		</tfoot>-->
+		</tfoot>
 	</table>
 
 
