@@ -24,6 +24,5 @@ class Article extends Model
      public function scopeLastArticles($query, $count)
     {
     	return $query->orderBy('created_at','desc')->take($count)->get();
-
     }
 }
